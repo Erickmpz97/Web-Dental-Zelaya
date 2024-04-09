@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+}
+
+/* Estilos para el header */
+header {
+    background-color: aquamarine;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: darkblue;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilos para los elementos de la barra de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(249, 247, 247);
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(31, 132, 58, 0.497);
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: royalblue;
+}
+
+/* Estilos para el aside */
+aside {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    float: right;
+    width: 30%;
+}
+
+/* Estilos para los elementos dentro del aside */
+aside h2 {
+    color: darkblue;
+    margin-top: 0;
+}
+
+aside p {
+    color: gray;
+    margin-top: 5px;
+}
+
+/* Estilos para el contenido principal */
+main {
+    float: left;
+    width: 65%;
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media query para ajustar el footer en dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px; /* Ajusta según sea necesario */
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    main, aside {
+        width: 100%;
+    }
+    footer {flex-direction: column;
+            align-items: center;}
+}
+
